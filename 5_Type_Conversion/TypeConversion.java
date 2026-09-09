@@ -5,12 +5,20 @@ public class TypeConversion {
   public static void main(String args[]) {
     // type conversion and casting
     // ? 1 Automatic type conversyion/ widening - implicit
-    float myFloat = 5;
+    int num = 5;
+    double myF = num;
+    System.out.println(myF);
+    byte id = 20;
+    int myId = id;
 
     // ? 2 Narrowing - explicit
+    double marks = 10.45;
+    int myMark = (int) marks;
+    System.out.println(myMark);
 
-    int myint = (int) 5.4f;
-    System.out.println(myint);
+    String age = "20";
+    int myage = Integer.parseInt(age);
+    System.out.println(myage);
   }
 
 }
