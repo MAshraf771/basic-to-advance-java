@@ -41,13 +41,47 @@ public static void main(String[] args) {
 // double comint = P * Math.pow (1 + R/100, years) ;
 //   System.out.println("The compound interest is: " + comint);
 // ? farenheit to celsius
-  System.out.println("welcome to farenheit to celsius converter\n");
+  // System.out.println("welcome to farenheit to celsius converter\n");
   
-  System.out.println("please enter the temperature in farenheit:");
-  double f = scanner.nextDouble();
-  double c = (f - 32) * 5/9;
-  System.out.println("The temperature in celsius is: " + c);
+  // System.out.println("please enter the temperature in farenheit:");
+  // double f = scanner.nextDouble();
+  // double c = (f - 32) * 5/9;
+  // System.out.println("The temperature in celsius is: " + c);
+// ? chack no
+// System.out.println("enter no: ");
+// int a = scanner.nextInt();
+// if(a>0){
+//   System.out.println(a + " is a positive number");
+
+// }else if(a<0){
+//   System.out.println(a + " is a negative number");
+
+// }else{
+//   System.out.println(a + " is zero");
+// }
+// ? odd and even
+// int a = 29;
+// if(a%2==0){
+//   System.out.println(a + " is an even number");
+// }  else{
+//   System.out.println(a + " is an odd number");
+
+// }
+//? greatest no
+int b = 90;
+int c = 98;
+int d = 80;
+if(b>c&&b>d){
+  System.out.println(b+" b is gratest");
+}else if (c>b&&c>d){
+    System.out.println(c+" c is gratest");
+
+}else{
+      System.out.println(d+" d is gratest");
 
 }
-  
+
+
+
+}
 }
