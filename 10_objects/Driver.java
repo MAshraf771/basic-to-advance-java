@@ -1,5 +1,14 @@
 
 public class Driver {
+  static int minimumAgeforDriving = 18;
+  int name;
+  String dateOfLicence;
+  int age;
+
+  public boolean isAllowedDrive() {
+    return this.age > minimumAgeforDriving;
+  }
+
   public static void main(String[] args) {
     // CarObject mycar = new CarObject();
     // mycar.start();
@@ -11,6 +20,8 @@ public class Driver {
     CarObject startedCar = Bmw.start();
     startedCar.drive();
     //// Bmw.start().drive();
+    Driver myDriver = new Driver();
+    // myDriver.isAllowedDrive();
 
   }
 }
