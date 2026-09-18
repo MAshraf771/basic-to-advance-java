@@ -15,10 +15,16 @@ public class Driver {
     // mycar.drive();
     // mycar.AdddFule(4);
     // System.out.println(mycar.getFule());
-    CarObject Bmw = new CarObject();
+    CarObject Bmw = new CarObject("red", 930000, "cavic");
+    CarObject seccside = new CarObject();
     Bmw.AdddFule(6);
     CarObject startedCar = Bmw.start();
     startedCar.drive();
+    System.out.println(Bmw.color);
+    System.out.println(Bmw.name);
+    System.out.println(Bmw.prize);
+    System.out.println(seccside.brand);
+    System.out.println(Bmw.brand);
     //// Bmw.start().drive();
     Driver myDriver = new Driver();
     // myDriver.isAllowedDrive();
