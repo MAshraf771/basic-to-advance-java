@@ -9,6 +9,14 @@ public class Driver {
     return this.age > minimumAgeforDriving;
   }
 
+  @Override
+  public String toString() {
+    return "Driver{" +
+        "name=" + name
+
+    ;
+  }
+
   public static void main(String[] args) {
     // CarObject mycar = new CarObject();
     // mycar.start();
@@ -19,14 +27,16 @@ public class Driver {
     CarObject seccside = new CarObject();
     Bmw.AdddFule(6);
     CarObject startedCar = Bmw.start();
-    startedCar.drive();
-    System.out.println(Bmw.color);
-    System.out.println(Bmw.name);
-    System.out.println(Bmw.prize);
-    System.out.println(seccside.brand);
-    System.out.println(Bmw.brand);
+    // startedCar.drive();
+    // System.out.println(Bmw.color);
+    // System.out.println(Bmw.name);
+    // System.out.println(Bmw.prize);
+    // System.out.println(seccside.brand);
+    // System.out.println(Bmw.brand);
     //// Bmw.start().drive();
-    Driver myDriver = new Driver();
+    System.out.println(Bmw.toString());
+    // Driver myDriver = new Driver();
+
     // myDriver.isAllowedDrive();
 
   }
