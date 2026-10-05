@@ -14,6 +14,42 @@ class challengesof {
     // }
     // System.out.println(count);
     // ? array sorted
+    boolean inc = increaseingOrder(arr);
+    boolean dec = decreaseingOrder(arr);
+    if (inc || dec) {
+      System.out.println("array is shorted");
+    } else {
+      System.out.println("array is not sorted");
+    }
+
+  }
+
+  static boolean decreaseingOrder(int[] num) {
+
+    int i = 1;
+    while (i < num.length) {
+      if (num[i] > num[i - 1]) {
+        return false;
+
+      }
+      i++;
+
+    }
+    return true;
+
+  }
+
+  static boolean increaseingOrder(int[] num) {
+    int i = 1;
+    while (i < num.length) {
+      if (num[i] < num[i - 1]) {
+        return false;
+
+      }
+      i++;
+
+    }
+    return true;
 
   }
 
